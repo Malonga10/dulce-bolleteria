@@ -9,7 +9,7 @@ const products = [
   {id:'zanahoria', name:'Panqué de Zanahoria', cats:['clasicos'], desc:'Panqué clásico de zanahoria, húmedo y lleno de sabor.', price:270, img:'imgs/panque_zanahoria.jpeg'},
   {id:'zanahoria-coco', name:'Panqué de Zanahoria con Coco', cats:['clasicos'], desc:'Nuestra zanahoria clásica con un toque tropical de coco tostado.', price:290, img:'imgs/panque_zana_coco.jpeg'},
   {id:'chocolate', name:'Panqué de Chocolate', cats:['clasicos'], desc:'Suave, húmedo y esponjoso, con un delicioso sabor a chocolate.', price:270, img:'imgs/panque_chocolate_normal.jpeg'},
-  {id:'chocolate-relleno', name:'Panqué de Chocolate con Relleno', cats:['clasicos'], desc:'Nuestro panqué de chocolate con un relleno sorpresa en el centro.', price:320, img:'imgs/panque_chocolate.jpeg'},
+  {id:'chocolate-relleno', name:'Panqué de Chocolate con Relleno', cats:['clasicos'], desc:'Panqué de chocolate bañado con cobertura de chocolate semiamargo.', price:320, img:'imgs/panque_chocolate.jpeg'},
   {id:'avena-manzana', name:'Panqué de Avena con Manzana', cats:['saludables'], desc:'Harina de avena, manzanas ralladas y dulzor natural.', price:300, img:'imgs/panque_manza_avena.jpeg'},
 
   {id:'marmoleado', name:'Marmoleado de Café y Vainilla', cats:['especialidades'], desc:'Especialidad de la casa: swirl de café y vainilla en cada rebanada.', price:340, img:'imgs/marmoleado_cafe.jpeg'},
