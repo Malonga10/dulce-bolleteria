@@ -2,13 +2,13 @@ const WHATSAPP_NUMBER = "529871173779"; // ajustar si el número no lleva códig
 
 const products = [
   {id:'limon', name:'Panqué de Limón', cats:['clasicos'], desc:'100% casero, suave y esponjoso con un delicioso toque cítrico.', price:270, img:'imgs/panque_limon.jpeg'},
-  {id:'naranja', name:'Panqué de Naranja', cats:['clasicos'], desc:'Clásico de la casa con un fresco sabor a naranja natural.',  price:270, img:'imgs/panque_naranja.jpeg'},
-  {id:'platano-nuez', name:'Panqué de Plátano con Nuez', cats:['saludables'], desc:'Plátanos maduros, dulzor natural y textura suave y esponjosa.', price:270, img:'imgs/panque_platano_nuez.jpeg'},
+  {id:'naranja', name:'Panqué de Naranja', cats:['clasicos'], desc:'Clásico de la casa con un fresco sabor a naranja natural.',  price:290, img:'imgs/panque_naranja.jpeg'},
+  {id:'platano-nuez', name:'Panqué de Plátano con Nuez', cats:['saludables'], desc:'Plátanos maduros, dulzor natural y textura suave y esponjosa.', price:290, img:'imgs/panque_platano_nuez.jpeg'},
   {id:'datil', name:'Panqué de Dátil', cats:['saludables'], desc:'Harina de avena, dátiles maduros y dulzor natural.', price:300, img:'imgs/panque_datil.jpeg'},
   {id:'platano-cafe-datil', name:'Plátano, Café Espresso y Dátil', cats:['clasicos'], desc:'Panqué artesanal elaborado con platanos maduros, café espresso y dátiles.',  price:320, img:'imgs/panque_datil2.jpeg'},
-  {id:'zanahoria', name:'Panqué de Zanahoria', cats:['clasicos'], desc:'Panqué clásico de zanahoria, húmedo y lleno de sabor.', price:270, img:'imgs/panque_zanahoria.jpeg'},
+  {id:'zanahoria', name:'Panqué de Zanahoria', cats:['clasicos'], desc:'Panqué clásico de zanahoria, húmedo y lleno de sabor.', price:290, img:'imgs/panque_zanahoria.jpeg'},
   {id:'zanahoria-coco', name:'Panqué de Zanahoria con Coco', cats:['clasicos'], desc:'Nuestra zanahoria clásica con un toque tropical de coco tostado.', price:290, img:'imgs/panque_zana_coco.jpeg'},
-  {id:'chocolate', name:'Panqué de Chocolate', cats:['clasicos'], desc:'Suave, húmedo y esponjoso, con un delicioso sabor a chocolate.', price:270, img:'imgs/panque_chocolate_normal.jpeg'},
+  {id:'chocolate', name:'Panqué de Chocolate', cats:['clasicos'], desc:'Suave, húmedo y esponjoso, con un delicioso sabor a chocolate.', price:290, img:'imgs/panque_chocolate_normal.jpeg'},
   {id:'chocolate-relleno', name:'Panqué de Chocolate con Relleno', cats:['clasicos'], desc:'Panqué de chocolate bañado con cobertura de chocolate semiamargo.', price:320, img:'imgs/panque_chocolate.jpeg'},
   {id:'avena-manzana', name:'Panqué de Avena con Manzana', cats:['saludables'], desc:'Harina de avena, manzanas ralladas y dulzor natural.', price:300, img:'imgs/panque_manza_avena.jpeg'},
 
@@ -19,7 +19,7 @@ const products = [
   {id:'queso-bola', name:'Panqué de Queso de Bola', cats:['especialidades'], desc:'Panqué suave y humedo elaborado con queso de bola y mantequilla azul, cubierto con cremoso betún.', price:340, img:'imgs/panque_quesobola.jpeg'},
 
   {id:'pina-colada', name:'Panqué de Piña Colada', cats:['especiales'], desc:'Sabor especial tropical, inspirado en la clásica piña colada.', price:320, img: 'imgs/panque_pina_colada.jpeg'},
-  {id:'vino-tinto', name:'Panqué de Vino Tinto', cats:['especiales'], desc:'Edición especial ✨ un sabor sofisticado y único de temporada.', price:320, img: 'imgs/panque_vino.jpeg', special:true},
+  {id:'vino-tinto', name:'Panqué de Vino Tinto', cats:['especiales'], desc:'Edición especial ✨ un sabor sofisticado y único de temporada.', price:340, img: 'imgs/panque_vino.jpeg', special:true},
 
   {id:'mostachon-mediano', name:'Mostachón', group:'mostachon', sizeLabel:'Mediano', cats:['mostachon'], desc:'Crujiente por fuera, suave por dentro, con relleno de platano y dulce de leche.', price:400, img:'imgs/mostachon.jpeg'},
   {id:'mostachon-grande', name:'Mostachón', group:'mostachon', sizeLabel:'Grande', cats:['mostachon'], desc:'Crujiente por fuera, suave por dentro, con relleno de platano y dulce de leche.', price:650, img:'imgs/mostachon.jpeg'},
