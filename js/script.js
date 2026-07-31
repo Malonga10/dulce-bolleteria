@@ -7,7 +7,6 @@ const products = [
   {id:'datil', name:'Panqué de Dátil', cats:['saludables'], desc:'Harina de avena, dátiles maduros y dulzor natural.', price:300, img:'imgs/panque_datil.jpeg'},
   {id:'platano-cafe-datil', name:'Plátano, Café Espresso y Dátil', cats:['clasicos', 'saludables'], desc:'Panqué artesanal elaborado con platanos maduros, café espresso y dátiles.',  price:320, img:'imgs/panque_platano.jpeg'},
   {id:'zanahoria', name:'Panqué de Zanahoria', cats:['clasicos'], desc:'Panqué clásico de zanahoria, húmedo y lleno de sabor.', price:270, img:'imgs/panque_zanahoria.jpeg'},
-  {id:'datil-zanahoria', name:'Panqué de Dátil con Zanahoria', cats:['saludables'], desc:'Harina de avena, dátiles maduros y zanahorias ralladas.', price:290, img:'imgs/panque_datil2.jpeg'},
   {id:'zanahoria-coco', name:'Panqué de Zanahoria con Coco', cats:['clasicos'], desc:'Nuestra zanahoria clásica con un toque tropical de coco tostado.', price:290, img:'imgs/panque_zana_coco.jpeg'},
   {id:'chocolate', name:'Panqué de Chocolate', cats:['clasicos'], desc:'Suave, húmedo y esponjoso, con un delicioso sabor a chocolate.', price:270, img:'imgs/panque_chocolate_normal.jpeg'},
   {id:'chocolate-relleno', name:'Panqué de Chocolate con Relleno', cats:['clasicos'], desc:'Nuestro panqué de chocolate con un relleno sorpresa en el centro.', price:320, img:'imgs/panque_chocolate.jpeg'},
