@@ -7,7 +7,7 @@ const products = [
   {id:'datil', name:'Panqué de Dátil', cats:['saludables'], desc:'Harina de avena, dátiles maduros y dulzor natural.', price:300, img:'imgs/panque_datil.jpeg'},
   {id:'platano-cafe-datil', name:'Plátano, Café Espresso y Dátil', cats:['clasicos'], desc:'Panqué artesanal elaborado con platanos maduros, café espresso y dátiles.',  price:320, img:'imgs/panque_datil2.jpeg'},
   {id:'zanahoria', name:'Panqué de Zanahoria', cats:['clasicos'], desc:'Panqué clásico de zanahoria, húmedo y lleno de sabor.', price:290, img:'imgs/panque_zanahoria.jpeg'},
-  {id:'zanahoria-coco', name:'Panqué de Zanahoria con Coco', cats:['clasicos'], desc:'Nuestra zanahoria clásica con un toque tropical de coco tostado.', price:290, img:'imgs/panque_zana_coco.jpeg'},
+  {id:'zanahoria-coco', name:'Panqué de Zanahoria con Coco', cats:['clasicos'], desc:'Nuestra zanahoria clásica con un toque tropical de coco tostado.', price:320, img:'imgs/panque_zana_coco.jpeg'},
   {id:'chocolate', name:'Panqué de Chocolate', cats:['clasicos'], desc:'Suave, húmedo y esponjoso, con un delicioso sabor a chocolate.', price:290, img:'imgs/panque_chocolate_normal.jpeg'},
   {id:'chocolate-relleno', name:'Panqué de Chocolate con Relleno', cats:['clasicos'], desc:'Panqué de chocolate bañado con cobertura de chocolate semiamargo.', price:320, img:'imgs/panque_chocolate.jpeg'},
   {id:'avena-manzana', name:'Panqué de Avena con Manzana', cats:['saludables'], desc:'Harina de avena, manzanas ralladas y dulzor natural.', price:300, img:'imgs/panque_manza_avena.jpeg'},
@@ -16,7 +16,7 @@ const products = [
   {id:'fresa', name:'Panqué de Fresa', cats:['especialidades'], desc:'Especialidad de la casa con un delicado sabor a fresa natural.', price:320, img:'imgs/panque_fresa.jpeg'},
   {id:'lechera', name:'Panqué de Lechera', cats:['especialidades'], desc:'Suave y esponjoso, cubierto con glaseado, láminas de almendra y lechera.', price:290, img:'imgs/panque_lechera.jpeg'},
   {id:'mantequilla-holandesa', name:'Panqué de Mantequilla Holandesa', cats:['especialidades'], desc:'Suave, esponjoso y con un delicado sabor a mantequilla holandesa.', price:290, img:'imgs/marmoleado_mante.jpeg'},
-  {id:'queso-bola', name:'Panqué de Queso de Bola', cats:['especialidades'], desc:'Panqué suave y humedo elaborado con queso de bola y mantequilla azul, cubierto con cremoso betún.', price:340, img:'imgs/panque_quesobola.jpeg'},
+  {id:'queso-bola', name:'Panqué de Queso de Bola', cats:['especialidades'], desc:'Panqué suave y humedo elaborado con queso de bola y mantequilla azul, cubierto con cremoso betún.', price:360, img:'imgs/panque_quesobola.jpeg'},
 
   {id:'pina-colada', name:'Panqué de Piña Colada', cats:['especiales'], desc:'Sabor especial tropical, inspirado en la clásica piña colada.', price:320, img: 'imgs/panque_pina_colada.jpeg'},
   {id:'vino-tinto', name:'Panqué de Vino Tinto', cats:['especiales'], desc:'Edición especial ✨ un sabor sofisticado y único de temporada.', price:340, img: 'imgs/panque_vino.jpeg', special:true},
