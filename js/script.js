@@ -16,7 +16,7 @@ const products = [
   {id:'fresa', name:'Panqué de Fresa', cats:['especialidades'], desc:'Especialidad de la casa con un delicado sabor a fresa natural.', price:320, img:'imgs/panque_fresa.jpeg'},
   {id:'lechera', name:'Panqué de Lechera', cats:['especialidades'], desc:'Suave y esponjoso, cubierto con glaseado, láminas de almendra y lechera.', price:290, img:'imgs/panque_lechera.jpeg'},
   {id:'mantequilla-holandesa', name:'Panqué de Mantequilla Holandesa', cats:['especialidades'], desc:'Suave, esponjoso y con un delicado sabor a mantequilla holandesa.', price:290, img:'imgs/marmoleado_mante.jpeg'},
-  {id:'queso-bola', name:'Panqué de Queso de Bola', cats:['especialidades'], desc:'Panqué suave y humedo elaborado con queso de bola y mantequilla azul, cubierto con cremoso betún.', price:360, img:'imgs/panque_quesobola.jpeg'},
+  {id:'queso-bola', name:'Panqué de Queso de Bola', cats:['premium'], desc:'Panqué suave y humedo elaborado con queso de bola y mantequilla azul, cubierto con cremoso betún.', price:360, img:'imgs/panque_quesobola.jpeg'},
 
   {id:'pina-colada', name:'Panqué de Piña Colada', cats:['especiales'], desc:'Sabor especial tropical, inspirado en la clásica piña colada.', price:320, img: 'imgs/panque_pina_colada.jpeg'},
   {id:'vino-tinto', name:'Panqué de Vino Tinto', cats:['especiales'], desc:'Edición especial ✨ un sabor sofisticado y único de temporada.', price:340, img: 'imgs/panque_vino.jpeg', special:true},
