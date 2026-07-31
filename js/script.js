@@ -3,7 +3,7 @@ const WHATSAPP_NUMBER = "529871173779"; // ajustar si el número no lleva códig
 const products = [
   {id:'limon', name:'Panqué de Limón', cats:['clasicos'], desc:'100% casero, suave y esponjoso con un delicioso toque cítrico.', price:270, img:'imgs/panque_limon.jpeg'},
   {id:'naranja', name:'Panqué de Naranja', cats:['clasicos'], desc:'Clásico de la casa con un fresco sabor a naranja natural.',  price:270, img:'imgs/panque_naranja.jpeg'},
-  {id:'platano-nuez', name:'Panqué de Plátano con Nuez', cats:['clasicos'], desc:'Plátanos maduros, dulzor natural y textura suave y esponjosa.', price:270, img:'imgs/panque_platano_nuez.jpeg'},
+  {id:'platano-nuez', name:'Panqué de Plátano con Nuez', cats:['saludables'], desc:'Plátanos maduros, dulzor natural y textura suave y esponjosa.', price:270, img:'imgs/panque_platano_nuez.jpeg'},
   {id:'datil', name:'Panqué de Dátil', cats:['saludables'], desc:'Harina de avena, dátiles maduros y dulzor natural.', price:300, img:'imgs/panque_datil.jpeg'},
   {id:'platano-cafe-datil', name:'Plátano, Café Espresso y Dátil', cats:['clasicos'], desc:'Panqué artesanal elaborado con platanos maduros, café espresso y dátiles.',  price:320, img:'imgs/panque_datil2.jpeg'},
   {id:'zanahoria', name:'Panqué de Zanahoria', cats:['clasicos'], desc:'Panqué clásico de zanahoria, húmedo y lleno de sabor.', price:270, img:'imgs/panque_zanahoria.jpeg'},
