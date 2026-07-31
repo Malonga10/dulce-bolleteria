@@ -21,8 +21,8 @@ const products = [
   {id:'pina-colada', name:'Panqué de Piña Colada', cats:['especiales'], desc:'Sabor especial tropical, inspirado en la clásica piña colada.', price:320, img: 'imgs/panque_pina_colada.jpeg'},
   {id:'vino-tinto', name:'Panqué de Vino Tinto', cats:['especiales'], desc:'Edición especial ✨ un sabor sofisticado y único de temporada.', price:320, img: 'imgs/panque_vino.jpeg', special:true},
 
-  {id:'mostachon-mediano', name:'Mostachón', group:'mostachon', sizeLabel:'Mediano', cats:['mostachon'], desc:'Merengue crujiente, crema suave, plátano fresco y dulce de leche.', price:350, img:'imgs/mostachon.jpeg'},
-  {id:'mostachon-grande', name:'Mostachón', group:'mostachon', sizeLabel:'Grande', cats:['mostachon'], desc:'Merengue crujiente, crema suave, plátano fresco y dulce de leche.', price:650, img:'imgs/mostachon.jpeg'},
+  {id:'mostachon-mediano', name:'Mostachón', group:'mostachon', sizeLabel:'Mediano', cats:['mostachon'], desc:'Crujiente por fuera, suave por dentro, con relleno de platano y dulce de leche.', price:400, img:'imgs/mostachon.jpeg'},
+  {id:'mostachon-grande', name:'Mostachón', group:'mostachon', sizeLabel:'Grande', cats:['mostachon'], desc:'Crujiente por fuera, suave por dentro, con relleno de platano y dulce de leche.', price:650, img:'imgs/mostachon.jpeg'},
   {id:'barras-chocolate', name:'Barras de Chocolate', cats:['saludables'], desc:'Chocolate semiamargo con relleno de cacahuate (6 piezas).', price:150, img:'imgs/barritas_chocolate.jpeg'},
 ];
 
