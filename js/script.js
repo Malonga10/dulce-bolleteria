@@ -136,6 +136,7 @@ renderProducts();
 
 // ---- cart logic ----
 let cart = {}; // id -> qty
+let deliveryMethod = 'domicilio'; // 'domicilio' o 'recoger'
 
 function addToCart(id){
   cart[id] = (cart[id] || 0) + 1;
@@ -189,7 +190,8 @@ function renderCart(){
     `;
   }).join('');
 
-  document.getElementById('totalPrice').textContent = '$' + total;
+  const shipping = deliveryMethod === 'domicilio' ? 35 : 0;
+  document.getElementById('totalPrice').textContent = '$' + (total + shipping);
   document.getElementById('waBtn').disabled = false;
   document.getElementById('mpBtn').disabled = false;
 }
@@ -215,11 +217,23 @@ function sendOrder(){
     const label = p.name + (p.sizeLabel ? ' (' + p.sizeLabel + ')' : '');
     msg += `• ${qty}x ${label} — $${p.price * qty}%0A`;
   });
-  msg += `%0ATotal estimado: $${total}%0AEnvío a domicilio: $35.00%0A`;
+  const shipping = deliveryMethod === 'domicilio' ? 35 : 0;
+  const shippingLine = deliveryMethod === 'domicilio' ? 'Envío a domicilio: $35.00' : 'Recoge en local: $0.00';
+  msg += `%0ATotal estimado: $${total + shipping}%0A${shippingLine}%0A`;
   const note = document.getElementById('noteInput').value.trim();
   if(note) msg += `%0ANotas: ${encodeURIComponent(note)}`;
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, '_blank');
 }
+
+// ---- selector de envío ----
+document.getElementById('deliverySelect').querySelectorAll('.size-opt').forEach(opt => {
+  opt.addEventListener('click', () => {
+    document.querySelectorAll('#deliverySelect .size-opt').forEach(o => o.classList.remove('sel'));
+    opt.classList.add('sel');
+    deliveryMethod = opt.dataset.method;
+    renderCart(); // para actualizar el total mostrado
+  });
+});
 
 // ---- pago con tarjeta (Mercado Pago) ----
 async function payWithCard(){
@@ -246,7 +260,7 @@ async function payWithCard(){
     const res = await fetch('/.netlify/functions/create-preference', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ items, note })
+      body: JSON.stringify({ items, note, deliveryMethod })
     });
     const data = await res.json();
 

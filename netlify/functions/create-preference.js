@@ -4,7 +4,7 @@ exports.handler = async function (event) {
   }
 
   try {
-    const { items, note } = JSON.parse(event.body);
+    const { items, note, deliveryMethod } = JSON.parse(event.body);
 
     if (!items || items.length === 0) {
       return { statusCode: 400, body: JSON.stringify({ error: 'Carrito vacío' }) };
@@ -17,12 +17,15 @@ exports.handler = async function (event) {
       currency_id: 'MXN',
     }));
 
-    mpItems.push({
-      title: 'Envío a domicilio',
-      quantity: 1,
-      unit_price: 35,
-      currency_id: 'MXN',
-    });
+    // Solo agregamos envío si el cliente eligió domicilio
+    if (deliveryMethod === 'domicilio') {
+      mpItems.push({
+        title: 'Envío a domicilio',
+        quantity: 1,
+        unit_price: 35,
+        currency_id: 'MXN',
+      });
+    }
 
     const siteUrl = process.env.URL || 'https://malonga10.github.io/dulce-bolleteria';
 

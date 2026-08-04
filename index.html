@@ -151,6 +151,10 @@
     <div class="drawer-empty">Aún no has agregado panqués <span class="heart">♥</span></div>
   </div>
   <div class="drawer-foot">
+    <div class="size-select" id="deliverySelect" style="margin-bottom:14px;">
+      <div class="size-opt sel" data-method="domicilio">Envío a domicilio</div>
+      <div class="size-opt" data-method="recoger">Recoger yo mismo</div>
+    </div>
     <textarea class="drawer-note" id="noteInput" placeholder="Notas para tu pedido (fecha deseada, dirección, etc.)" rows="2"></textarea>
     <div class="drawer-total"><span>Total estimado</span><strong id="totalPrice">$0</strong></div>
     <button class="whatsapp-btn" id="waBtn" onclick="sendOrder()" disabled>
