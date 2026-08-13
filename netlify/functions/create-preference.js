@@ -4,7 +4,7 @@ exports.handler = async function (event) {
   }
 
   try {
-    const { items, note, deliveryMethod } = JSON.parse(event.body);
+    const { items, note, deliveryMethod, phone } = JSON.parse(event.body);
 
     if (!items || items.length === 0) {
       return { statusCode: 400, body: JSON.stringify({ error: 'Carrito vacío' }) };
@@ -38,7 +38,7 @@ exports.handler = async function (event) {
       },
       auto_return: 'approved',
       statement_descriptor: 'DULCE BOLLETERIA',
-      metadata: { nota: note || '' },
+      metadata: { nota: note || '', telefono: phone || '', entrega: deliveryMethod || '' },
     };
 
     const response = await fetch('https://api.mercadopago.com/checkout/preferences', {

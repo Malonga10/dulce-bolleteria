@@ -155,6 +155,13 @@
       <div class="size-opt sel" data-method="domicilio">Envío a domicilio</div>
       <div class="size-opt" data-method="recoger">Recoger yo mismo</div>
     </div>
+    <div id="pickupAddress" style="display:none; background:var(--blush); border-radius:10px; padding:10px 12px; font-size:0.82rem; color:var(--cocoa); margin-bottom:14px; line-height:1.5;">
+      📍 <strong>Dirección para recoger:</strong><br>
+      50 Avenida entre 6 y 8 Norte, Col. 10 de Abril<br>
+      Casa blanca de 2 pisos, #381
+    </div>
+    <input type="tel" id="phoneInput" placeholder="Tu número de WhatsApp (10 dígitos)" maxlength="10"
+      style="width:100%; box-sizing:border-box; border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-family:inherit; font-size:0.9rem; margin-bottom:10px; background:white;">
     <textarea class="drawer-note" id="noteInput" placeholder="Notas para tu pedido (fecha deseada, dirección, etc.)" rows="2"></textarea>
     <div class="drawer-total"><span>Total estimado</span><strong id="totalPrice">$0</strong></div>
     <button class="whatsapp-btn" id="waBtn" onclick="sendOrder()" disabled>

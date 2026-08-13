@@ -218,7 +218,9 @@ function sendOrder(){
     msg += `• ${qty}x ${label} — $${p.price * qty}%0A`;
   });
   const shipping = deliveryMethod === 'domicilio' ? 35 : 0;
-  const shippingLine = deliveryMethod === 'domicilio' ? 'Envío a domicilio: $35.00' : 'Recoge en local: $0.00';
+  const shippingLine = deliveryMethod === 'domicilio'
+    ? 'Envío a domicilio: $35.00'
+    : 'Recoge en local: $0.00 — 50 Avenida entre 6 y 8 Norte, Col. 10 de Abril, casa blanca de 2 pisos #381';
   msg += `%0ATotal estimado: $${total + shipping}%0A${shippingLine}%0A`;
   const note = document.getElementById('noteInput').value.trim();
   if(note) msg += `%0ANotas: ${encodeURIComponent(note)}`;
@@ -231,6 +233,7 @@ document.getElementById('deliverySelect').querySelectorAll('.size-opt').forEach(
     document.querySelectorAll('#deliverySelect .size-opt').forEach(o => o.classList.remove('sel'));
     opt.classList.add('sel');
     deliveryMethod = opt.dataset.method;
+    document.getElementById('pickupAddress').style.display = deliveryMethod === 'recoger' ? 'block' : 'none';
     renderCart(); // para actualizar el total mostrado
   });
 });
@@ -239,6 +242,12 @@ document.getElementById('deliverySelect').querySelectorAll('.size-opt').forEach(
 async function payWithCard(){
   const ids = Object.keys(cart);
   if(ids.length === 0) return;
+
+  const phone = document.getElementById('phoneInput').value.trim();
+  if(!/^\d{10}$/.test(phone)){
+    alert('Por favor ingresa tu número de WhatsApp a 10 dígitos antes de pagar con tarjeta, así podremos contactarte.');
+    return;
+  }
 
   const mpBtn = document.getElementById('mpBtn');
   mpBtn.disabled = true;
@@ -260,7 +269,7 @@ async function payWithCard(){
     const res = await fetch('/.netlify/functions/create-preference', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ items, note, deliveryMethod })
+      body: JSON.stringify({ items, note, deliveryMethod, phone })
     });
     const data = await res.json();
 
