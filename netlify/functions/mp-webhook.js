@@ -60,7 +60,10 @@ ${itemsList}
 ID del pago en Mercado Pago: ${payment.id}
     `.trim();
 
-    await fetch('https://api.resend.com/emails', {
+    console.log('NOTIFY_EMAIL configurado como:', process.env.NOTIFY_EMAIL);
+    console.log('RESEND_API_KEY presente:', !!process.env.RESEND_API_KEY);
+
+    const resendRes = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -73,6 +76,9 @@ ID del pago en Mercado Pago: ${payment.id}
         text: emailBody,
       }),
     });
+
+    const resendData = await resendRes.json();
+    console.log('Respuesta de Resend:', resendRes.status, JSON.stringify(resendData));
 
     return { statusCode: 200, body: 'ok' };
   } catch (err) {
