@@ -30,6 +30,7 @@ exports.handler = async function (event) {
       headers: { Authorization: `Bearer ${process.env.MP_ACCESS_TOKEN}` },
     });
     const payment = await mpRes.json();
+    console.log('Pago recibido:', payment.id, '- Estado:', payment.status);
 
     // Solo notificamos si el pago fue aprobado (para no llenarte de correos de intentos fallidos)
     if (payment.status !== 'approved') {
